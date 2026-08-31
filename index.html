@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Smart Study Planner</h1>
+        <p>Plan your studies and track your progress.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>➕ Add Study Task</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter your study task">
+
+            <select id="subject">
+                <option value="Maths">Maths</option>
+                <option value="Java">Java</option>
+                <option value="DBMS">DBMS</option>
+                <option value="Web Technology">Web Technology</option>
+            </select>
+
+            <select id="priority">
+                <option value="High">High Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="Low">Low Priority</option>
+            </select>
+
+            <input type="date" id="deadline">
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <section class="card">
+            <h2>📋 My Tasks</h2>
+            <div id="taskList"></div>
+        </section>
+
+        <section class="card">
+            <h2>📊 Progress</h2>
+            <p id="progressText">0% Completed</p>
+
+            <div class="progress-box">
+                <div id="progressBar"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
